@@ -1,0 +1,5 @@
+Querylet-Output-Excel-OLE
+
+Querylet::Output::Excel::OLE provides an output handler for Querylet that will
+create a new instance of Microsoft Excel using Win32::OLE and populate a
+worksheet with the query results.
