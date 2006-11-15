@@ -10,13 +10,13 @@ Querylet::Output::Excel::OLE - output query results to Excel via OLE
 
 =head1 VERSION
 
-version 0.14
+version 0.141
 
  $Id$
 
 =cut
 
-our $VERSION = '0.14';
+our $VERSION = '0.141';
 use Carp;
 
 =head1 SYNOPSIS
@@ -177,7 +177,7 @@ notified of progress on your bug as I make changes.
 
 =head1 COPYRIGHT
 
-Copyright 2004 Ricardo SIGNES, All Rights Reserved.
+Copyright 2004-2006, Ricardo SIGNES, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
