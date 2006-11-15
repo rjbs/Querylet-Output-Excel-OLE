@@ -12,7 +12,7 @@ Querylet::Output::Excel::OLE - output query results to Excel via OLE
 
 version 0.14
 
- $Id: OLE.pm,v 1.12 2005/08/09 03:02:54 rjbs Exp $
+ $Id$
 
 =cut
 
