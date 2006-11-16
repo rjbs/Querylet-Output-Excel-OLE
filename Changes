@@ -1,5 +1,8 @@
 Revision history for Querylet-Output-Excel-OLE
 
+0.0142  2006-11-16
+        packaging improvements
+
 0.13    2004-12-16
         use the column headers from Querylet::Query
 

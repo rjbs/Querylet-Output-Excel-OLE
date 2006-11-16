@@ -7,6 +7,7 @@ WriteMakefile(
     AUTHOR              => 'Ricardo Signes <rjbs@cpan.org>',
     VERSION_FROM        => 'lib/Querylet/Output/Excel/OLE.pm',
     ABSTRACT_FROM       => 'lib/Querylet/Output/Excel/OLE.pm',
+    LICENSE             => 'perl',
     PL_FILES            => {},
     PREREQ_PM => {
         'Querylet'   => 0.30,
