@@ -1,5 +1,10 @@
 Revision history for Querylet-Output-Excel-OLE
 
+{{$NEXT}}
+
+0.143     2013-11-14 22:44:42 America/New_York
+          update bugtracker and repo
+
 0.0142  2006-11-16
         packaging improvements
 
