@@ -1,22 +1,9 @@
-package Querylet::Output::Excel::OLE;
-use base qw(Querylet::Output);
-
 use strict;
 use warnings;
+package Querylet::Output::Excel::OLE;
+use parent qw(Querylet::Output);
+# ABSTRACT: output query results to Excel via OLE
 
-=head1 NAME
-
-Querylet::Output::Excel::OLE - output query results to Excel via OLE
-
-=head1 VERSION
-
-version 0.142
-
- $Id$
-
-=cut
-
-our $VERSION = '0.142';
 use Carp;
 
 =head1 SYNOPSIS
@@ -43,9 +30,7 @@ worksheet with the query results.
 This module isa Querylet::Output, and implements the interface described by
 that module.
 
-=over 4
-
-=item C<< default_type >>
+=head2 default_type
 
 The Excel::OLE handler is by default registered for the 'excel' type.
 
@@ -53,7 +38,7 @@ The Excel::OLE handler is by default registered for the 'excel' type.
 
 sub default_type { 'excel' }
 
-=item C<< handler >>
+=head2 handler
 
 The Querylet::Output::Excel::OLE handler returns a coderef that, when called,
 will create an Excel.Application object, then create a workbook, and then
@@ -132,13 +117,11 @@ sub _to_excel {
 	}
 }
 
-=back
-
 =head1 FUNCTIONS
 
-=over 4
+=head2 column_name
 
-=item C<< column_name($column_number) >>
+  column_name($column_number)
 
 This converts a column number to a column name, Excel style.  In other words:
 
@@ -161,27 +144,5 @@ sub column_name {
 	}
 	return $name;
 }
-
-=back
-
-=head1 AUTHOR
-
-Ricardo SIGNES, C<< <rjbs@cpan.org> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to
-C<bug-querylet-output-excel-ole@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org>.  I will be notified, and then you'll automatically be
-notified of progress on your bug as I make changes.
-
-=head1 COPYRIGHT
-
-Copyright 2004-2006, Ricardo SIGNES, All Rights Reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-=cut
 
 1;
